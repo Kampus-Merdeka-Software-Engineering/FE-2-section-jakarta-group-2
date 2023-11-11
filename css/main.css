@@ -112,6 +112,22 @@ body {
     font-size: 32px;
     color: white;
     justify-content: start;
+    width: 100%;
+}
+
+.navlink-dekstop {
+    width: 100%;
+    justify-content: center;
+}
+
+.navlink-dekstop a {
+    padding-inline: 20px;
+}
+
+.auth-dekstop {
+    width: 100%;
+    justify-content: end;
+    padding-right: 40px;
 }
 
 .navbar-dekstop ul {
@@ -128,7 +144,6 @@ body {
 .navbar-dekstop a{
     text-decoration: none;
     color: white;
-    padding-inline: 20px;
 }
 
 a.nav-button:hover {
