@@ -187,7 +187,9 @@ a.nav-button:hover {
 }
 
 .container-input {
+    position: relative;
     display: inline-block;
+    z-index: -1;
   }
 
 .container-input #search {
