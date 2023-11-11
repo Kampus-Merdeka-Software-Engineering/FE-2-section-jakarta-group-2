@@ -1,39 +1,53 @@
 body {
-    padding-left: 100px;
-    padding-right: 100px;
     font-family: 'poppins', sans-serif;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.33) 100%), url(../img/background1.png), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.navbar {
+.navbar-dekstop {
     display: flex;
     padding-top: 30px;
-    overflow: hidden;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
 }
 
-.navbar .logo {
+.navbar-mobile {
+    display: none;
+}
+
+/* Media query untuk tampilan mobile */
+@media only screen and (max-width: 768px) {
+    .navbar-dekstop {
+      display: none; /* Sembunyikan navbar desktop ketika tampilan mobile */
+    }
+
+    .navbar-mobile {
+        display: block;
+    }
+  }
+
+.navbar-dekstop .logo {
     font-weight: bold;
     font-size: 32px;
     color: white;
     justify-content: start;
 }
 
-.navbar ul {
+.navbar-dekstop ul {
     list-style-type: none;
     display: flex;
     margin: auto;
   }
   
-.navbar li {
+.navbar-dekstop li {
     display: inline;
     margin: 5px;
   }
 
-.navbar a{
+.navbar-dekstop a{
     text-decoration: none;
     color: white;
     padding-inline: 20px;
@@ -46,7 +60,7 @@ a.nav-button:hover {
     text-decoration-thickness: 3px;
 }
 
-.navbar .login {
+.navbar-dekstop .login {
     background-color: #B6BAC1;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -59,7 +73,7 @@ a.nav-button:hover {
     border-radius: 30px;
 }
 
-.navbar .register {
+.navbar-dekstop .register {
     background-color: #378EC8;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -73,6 +87,8 @@ a.nav-button:hover {
 }
 
 .section1 {
+    padding-left: 100px;
+    padding-right: 100px;
     min-height: 100vh;
     display: flex;
     margin: auto;
@@ -92,10 +108,27 @@ a.nav-button:hover {
     font-size: 60px;
 }
 
+.container-input {
+    position: relative;
+    display: inline-block;
+  }
+
 .container-input #search {
     justify-content: center;
     display: flex;
     margin: auto;
     width: 300px;
     height: 36px;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
+
+.svg-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Sesuaikan dengan jarak yang diinginkan dari kiri */
+    transform: translateY(-50%);
+    fill: #3C3C43;
+    opacity: 0.6;
+  }
