@@ -3,34 +3,43 @@ body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.33) 100%), url(../img/background1.png), lightgray 50% / cover no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin: 0;
 }
 
-.navbar-dekstop {
+.navbarDekstop {
     display: flex;
     padding-top: 30px;
+    padding-bottom: 30px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    transition: background-color 0.3s ease;
 }
 
-.navbar-mobile {
+.scrolled {
+    background-color: rgba(37, 37, 37, 0.8);
+}
+
+.navbarMobile {
     display: none;
 }
 
 /* Media query untuk tampilan mobile */
 @media only screen and (max-width: 768px) {
-    .navbar-dekstop {
+    .navbarDekstop {
       display: none; /* Sembunyikan navbar desktop ketika tampilan mobile */
     }
 
-    .navbar-mobile {
+    .navbarMobile {
         display: flex;
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
-        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        transition: background-color 0.3s ease;
     }
 
     .nav-content {
@@ -107,12 +116,12 @@ body {
     }
   }
 
-.navbar-dekstop .logo {
+.navbarDekstop .logo {
     font-weight: bold;
     font-size: 32px;
     color: white;
-    justify-content: start;
     width: 100%;
+    padding-left: 100px;
 }
 
 .navlink-dekstop {
@@ -127,21 +136,21 @@ body {
 .auth-dekstop {
     width: 100%;
     justify-content: end;
-    padding-right: 40px;
+    padding-right: 100px;
+    gap: 5px;
 }
 
-.navbar-dekstop ul {
+.navbarDekstop ul {
     list-style-type: none;
     display: flex;
     margin: auto;
   }
   
-.navbar-dekstop li {
+.navbarDekstop li {
     display: inline;
-    margin: 5px;
   }
 
-.navbar-dekstop a{
+.navbarDekstop a{
     text-decoration: none;
     color: white;
 }
@@ -153,7 +162,7 @@ a.nav-button:hover {
     text-decoration-thickness: 3px;
 }
 
-.navbar-dekstop .login {
+.navbarDekstop .login {
     background-color: #B6BAC1;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -166,7 +175,7 @@ a.nav-button:hover {
     border-radius: 30px;
 }
 
-.navbar-dekstop .register {
+.navbarDekstop .register {
     background-color: #378EC8;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -184,7 +193,6 @@ a.nav-button:hover {
     padding-right: 100px;
     min-height: 100vh;
     display: flex;
-    margin: auto;
     justify-content: center;
 }
 
@@ -225,3 +233,11 @@ a.nav-button:hover {
     fill: #3C3C43;
     opacity: 0.6;
   }
+
+.section2 {
+    background-color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 70px;
+    min-height: 100vh;
+}
