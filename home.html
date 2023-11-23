@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | LOKKA</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body class="berandaPage">
+    <!-- Navbar Dekstop -->
+    <nav id="navbarDekstop" class="navbarDekstop">
+        <div class="logo">
+            <a href="/">LOKKA</a>
+        </div>
+        <ul class="navlink-dekstop">
+            <li><a href="home.html" class="nav-button">Home</a></li>
+            <li><a href="#" class="nav-button">About</a></li>
+            <li><a href="#" class="nav-button">Wishlist</a></li>
+            <li><a href="#" class="nav-button">Order</a></li>
+        </ul>
+        <ul class="auth-dekstop">
+            <li><a href="#" class="login">Login</a></li>
+            <li><a href="#" class="register">Register</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar Mobile -->
+    <nav id="navbarMobile" class="navbarMobile">
+        <div class="nav-content">
+            <div>
+                <a href="#" class="logo-mobile">LOKKA</a>
+            </div>
+            <div class="openButtonsidebar">
+                <a href="javascript:void(0);" class="sidebar-button" onclick="toggleNav()">
+                    <svg class="bar-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h14M1 6h14M1 11h7"/>
+                    </svg>
+                </a>
+            </div>
+            <aside id="sidebar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Order</a>
+            </aside>
+        </div>
+    </nav>
+
+    <section class="section1">
+        <div class="container">
+                <div class="container-input"> 
+                    <svg class="svg-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_15_285)">
+                        <path d="M12.5322 19.0332C13.9297 19.0332 15.2393 18.6113 16.3291 17.8906L20.1787 21.749C20.4336 21.9951 20.7588 22.1182 21.1104 22.1182C21.8398 22.1182 22.376 21.5469 22.376 20.8262C22.376 20.4922 22.2617 20.167 22.0156 19.9209L18.1924 16.0801C18.9834 14.9551 19.4492 13.5928 19.4492 12.1162C19.4492 8.31055 16.3379 5.19922 12.5322 5.19922C8.73535 5.19922 5.61523 8.31055 5.61523 12.1162C5.61523 15.9219 8.72656 19.0332 12.5322 19.0332ZM12.5322 17.1875C9.74609 17.1875 7.46094 14.9023 7.46094 12.1162C7.46094 9.33008 9.74609 7.04492 12.5322 7.04492C15.3184 7.04492 17.6035 9.33008 17.6035 12.1162C17.6035 14.9023 15.3184 17.1875 12.5322 17.1875Z" fill="#3C3C43" fill-opacity="0.6"/>
+                    </g>
+                    </svg>    
+                    <input class="input-box" type="text" name="search" id="search" placeholder="Search">
+                </div>
+            <div class="content">
+                <div>
+                    Kata - kata
+                </div>
+                <div>
+                    Hari ini...     
+                </div>
+                <div>
+                    OTW.
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section2">
+        <div>
+            <div class="headerHoliday">
+                <div class="titleHoliday">Liburan</div>
+                <div class="titleHolidayChild">Jalan-jalan ke tempat Hits!</div>
+            </div>
+            <div class="card-container">
+                <div class="carousel">
+                    <div class="card">
+                        <div class="containerImageCard">
+                            <img src="img/Carousel/Holiday/Bali.png" alt="Bali">
+                            <div class="containerTextCardImage">
+                                <div class="">
+                                    test
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerDescCard">
+                            <div class="titleCard">
+                                Bali
+                            </div>
+                            <div class="descCard">
+                                Qui tempore voluptate qui quia commodi rem praesentium alias et.
+                            </div>
+                            <div class="footerCard">
+                                Rp. 120.000
+                                <span>
+                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.83118 16.9733C4.41385 17.1874 3.94031 16.8122 4.02464 16.3333L4.922 11.2194L1.11307 7.59102C0.757374 7.25154 0.942252 6.63095 1.41904 6.56392L6.71456 5.81143L9.07581 1.13326C9.2888 0.711604 9.86506 0.711604 10.078 1.13326L12.4393 5.81143L17.7348 6.56392C18.2116 6.63095 18.3965 7.25154 18.0397 7.59102L14.2319 11.2194L15.1292 16.3333C15.2136 16.8122 14.74 17.1874 14.3227 16.9733L9.57531 14.5342L4.8301 16.9733H4.83118Z" fill="#DF6951"/>
+                                    </svg>
+                                    5.0
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="containerImageCard">
+                            <img src="img/Carousel/Holiday/Bali.png" alt="Bali">
+                            <div class="containerTextCardImage">
+                                <div class="">
+                                    test
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerDescCard">
+                            <div class="titleCard">
+                                Bali
+                            </div>
+                            <div class="descCard">
+                                Qui tempore voluptate qui quia commodi rem praesentium alias et.
+                            </div>
+                            <div class="footerCard">
+                                Rp. 120.000
+                                <span>
+                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.83118 16.9733C4.41385 17.1874 3.94031 16.8122 4.02464 16.3333L4.922 11.2194L1.11307 7.59102C0.757374 7.25154 0.942252 6.63095 1.41904 6.56392L6.71456 5.81143L9.07581 1.13326C9.2888 0.711604 9.86506 0.711604 10.078 1.13326L12.4393 5.81143L17.7348 6.56392C18.2116 6.63095 18.3965 7.25154 18.0397 7.59102L14.2319 11.2194L15.1292 16.3333C15.2136 16.8122 14.74 17.1874 14.3227 16.9733L9.57531 14.5342L4.8301 16.9733H4.83118Z" fill="#DF6951"/>
+                                    </svg>
+                                    5.0
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="containerImageCard">
+                            <img src="img/Carousel/Holiday/Bali.png" alt="Bali">
+                            <div class="containerTextCardImage">
+                                <div class="">
+                                    test
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerDescCard">
+                            <div class="titleCard">
+                                Bali
+                            </div>
+                            <div class="descCard">
+                                Qui tempore voluptate qui quia commodi rem praesentium alias et.
+                            </div>
+                            <div class="footerCard">
+                                Rp. 120.000
+                                <span>
+                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.83118 16.9733C4.41385 17.1874 3.94031 16.8122 4.02464 16.3333L4.922 11.2194L1.11307 7.59102C0.757374 7.25154 0.942252 6.63095 1.41904 6.56392L6.71456 5.81143L9.07581 1.13326C9.2888 0.711604 9.86506 0.711604 10.078 1.13326L12.4393 5.81143L17.7348 6.56392C18.2116 6.63095 18.3965 7.25154 18.0397 7.59102L14.2319 11.2194L15.1292 16.3333C15.2136 16.8122 14.74 17.1874 14.3227 16.9733L9.57531 14.5342L4.8301 16.9733H4.83118Z" fill="#DF6951"/>
+                                    </svg>
+                                    5.0
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="containerImageCard">
+                            <img src="img/Carousel/Holiday/Bali.png" alt="Bali">
+                            <div class="containerTextCardImage">
+                                <div class="">
+                                    test
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerDescCard">
+                            <div class="titleCard">
+                                Bali
+                            </div>
+                            <div class="descCard">
+                                Qui tempore voluptate qui quia commodi rem praesentium alias et.
+                            </div>
+                            <div class="footerCard">
+                                Rp. 120.000
+                                <span>
+                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.83118 16.9733C4.41385 17.1874 3.94031 16.8122 4.02464 16.3333L4.922 11.2194L1.11307 7.59102C0.757374 7.25154 0.942252 6.63095 1.41904 6.56392L6.71456 5.81143L9.07581 1.13326C9.2888 0.711604 9.86506 0.711604 10.078 1.13326L12.4393 5.81143L17.7348 6.56392C18.2116 6.63095 18.3965 7.25154 18.0397 7.59102L14.2319 11.2194L15.1292 16.3333C15.2136 16.8122 14.74 17.1874 14.3227 16.9733L9.57531 14.5342L4.8301 16.9733H4.83118Z" fill="#DF6951"/>
+                                    </svg>
+                                    5.0
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="containerImageCard">
+                            <img src="img/Carousel/Holiday/Bali.png" alt="Bali">
+                            <div class="containerTextCardImage">
+                                <div class="">
+                                    test
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerDescCard">
+                            <div class="titleCard">
+                                Bali
+                            </div>
+                            <div class="descCard">
+                                Qui tempore voluptate qui quia commodi rem praesentium alias et.
+                            </div>
+                            <div class="footerCard">
+                                Rp. 120.000
+                                <span>
+                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.83118 16.9733C4.41385 17.1874 3.94031 16.8122 4.02464 16.3333L4.922 11.2194L1.11307 7.59102C0.757374 7.25154 0.942252 6.63095 1.41904 6.56392L6.71456 5.81143L9.07581 1.13326C9.2888 0.711604 9.86506 0.711604 10.078 1.13326L12.4393 5.81143L17.7348 6.56392C18.2116 6.63095 18.3965 7.25154 18.0397 7.59102L14.2319 11.2194L15.1292 16.3333C15.2136 16.8122 14.74 17.1874 14.3227 16.9733L9.57531 14.5342L4.8301 16.9733H4.83118Z" fill="#DF6951"/>
+                                    </svg>
+                                    5.0
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="containerImageCard">
+                            <img src="img/Carousel/Holiday/Bali.png" alt="Bali">
+                            <div class="containerTextCardImage">
+                                <div class="">
+                                    test
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerDescCard">
+                            <div class="titleCard">
+                                Bali
+                            </div>
+                            <div class="descCard">
+                                Qui tempore voluptate qui quia commodi rem praesentium alias et.
+                            </div>
+                            <div class="footerCard">
+                                Rp. 120.000
+                                <span>
+                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.83118 16.9733C4.41385 17.1874 3.94031 16.8122 4.02464 16.3333L4.922 11.2194L1.11307 7.59102C0.757374 7.25154 0.942252 6.63095 1.41904 6.56392L6.71456 5.81143L9.07581 1.13326C9.2888 0.711604 9.86506 0.711604 10.078 1.13326L12.4393 5.81143L17.7348 6.56392C18.2116 6.63095 18.3965 7.25154 18.0397 7.59102L14.2319 11.2194L15.1292 16.3333C15.2136 16.8122 14.74 17.1874 14.3227 16.9733L9.57531 14.5342L4.8301 16.9733H4.83118Z" fill="#DF6951"/>
+                                    </svg>
+                                    5.0
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>

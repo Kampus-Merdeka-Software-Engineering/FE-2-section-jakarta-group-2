@@ -1,9 +1,12 @@
 body {
     font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+
+.berandaPage {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.33) 100%), url(../img/background1.png), lightgray 50% / cover no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin: 0;
 }
 
 .navbarDekstop {
@@ -15,6 +18,7 @@ body {
     top: 0;
     left: 0;
     transition: background-color 0.3s ease;
+    z-index: 10;
 }
 
 .scrolled {
@@ -40,6 +44,7 @@ body {
         padding-top: 20px;
         padding-bottom: 20px;
         transition: background-color 0.3s ease;
+        z-index: 10;
     }
 
     .nav-content {
@@ -89,13 +94,13 @@ body {
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
+        z-index: 10;
         top: 0;
         left: 0;
         background-color: #378EC8;
         overflow-x: hidden;
         padding-top: 60px;
-        transition: 0.5s;
+        transition: 0.7s;
     }
 
     #sidebar a {
@@ -105,6 +110,7 @@ body {
         color: white;
         display: block;
         transition: 0.3s;
+        z-index: 10;
       }
 
     .bar-icon {
@@ -212,7 +218,10 @@ a.nav-button:hover {
 .container-input {
     position: relative;
     display: inline-block;
-    z-index: -1;
+    z-index: 1;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
   }
 
 .container-input #search {
@@ -228,12 +237,14 @@ a.nav-button:hover {
 .svg-icon {
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 30px;
     transform: translateY(-50%);
     fill: #3C3C43;
     opacity: 0.6;
   }
 
+/* Section Tempat wisata dan penginapan */
+/* Dekstop Version */
 .section2 {
     background-color: white;
     padding-left: 100px;
@@ -241,3 +252,297 @@ a.nav-button:hover {
     padding-top: 70px;
     min-height: 100vh;
 }
+
+.headerHoliday .titleHoliday{
+  color: #181E4B;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.titleHolidayChild {
+  color: #868686;
+}
+
+.card-container {
+  display: flex;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.carousel {
+  display: flex;
+  gap: 35px;
+}
+
+.card {
+  width: 370px;
+  height: 515px;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.containerImageCard {
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.containerTextCardImage {
+  display: flex;
+  margin-top: -6px;
+  text-align: center;
+  justify-content: center;
+  background-color: #DF6951;
+  font-size: 13px;
+  padding: 10px;
+  color: #fff;
+}
+
+.containerDescCard {
+
+}
+
+.titleCard {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #181E4B;
+}
+
+.descCard {
+  color: #181E4B;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 17px;
+}
+
+.footerCard {
+  color: #181E4B;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.footerCard span {
+  margin-left: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .section2 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+
+/* Login Css Style */
+.loginPage {
+    font-family: 'poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+.login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+  }
+
+  .login-container h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-group button {
+    background-color: #378EC8;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+
+
+/* Payment Page CSS */
+
+.paymentBody {
+    font-family: 'poppins', sans-serif;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.33) 100%), url(../img/background1.png), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.paymentPage {
+    margin-top: 180px;
+    margin-bottom: 180px;
+}
+
+@media only screen and (max-width: 768px) {
+    #paymentContainerMobile {
+        margin: auto;
+    }
+
+    #paymentPageMobile {
+        background-color: #fff;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
+
+ }
+
+.paymentContainer {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+  }
+
+  .title {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+  }
+
+  .title a {
+    display: flex;
+    margin: auto;
+  }
+
+  .title div {
+    width: 100%;
+  }
+
+  .title div h2 {
+    text-align: start;
+    padding-left: 10px;
+  }
+
+  .titlePaymentMethod {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .payment-method label img {
+    width: 85px; 
+    height: 45px; 
+  }
+
+  .paymentContainer h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .containerPaymentMethod {
+    display: flex;
+    gap: 38px;
+    margin-top: 20px;
+  }
+  
+  .containerRadio {
+    justify-content: center;
+    margin: auto;
+  }
+
+  .containerPaymentMethod label {
+    font-weight: 500;
+    font-size: 20px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .containerLogo {
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .containerRadio input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    margin: auto;
+  }
+
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .payment-method {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .payment-method label {
+    margin-bottom: 10px;
+  }
+
+  button {
+    background-color: #378EC8;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }

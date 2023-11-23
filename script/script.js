@@ -1,4 +1,3 @@
-/* Set the width of the sidebar to 250px (show it) */
 function toggleNav() {
   var sidebar = document.getElementById("sidebar");
   var currentWidth = sidebar.style.width;
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const navbar = document.getElementById('navbarDekstop');
 
   function handleScroll() {
-      // Check if the scroll position is greater than the window's height
       if (window.scrollY > 70) {
         navbar.classList.add('scrolled');
       } else {
@@ -24,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   }
 
-  // Add scroll event listener
   document.addEventListener('scroll', handleScroll);
 });
 
@@ -32,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const navbar = document.getElementById('navbarMobile');
 
   function handleScroll() {
-      // Check if the scroll position is greater than the window's height
       if (window.scrollY > 70) {
         navbar.classList.add('scrolled');
       } else {
@@ -40,8 +36,11 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   }
 
-  // Add scroll event listener
   document.addEventListener('scroll', handleScroll);
 });
+
+/* Carousel Script */
+
+
 
 
