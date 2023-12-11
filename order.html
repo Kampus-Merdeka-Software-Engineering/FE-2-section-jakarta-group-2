@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | LOKKA</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body class="berandaPage">
+    <!-- Navbar Dekstop -->
+    <nav id="navbarDekstop" class="navbarDekstop">
+        <div class="logo">
+            <a href="/">LOKKA</a>
+        </div>
+        <ul class="navlink-dekstop">
+            <li><a href="home.html" class="nav-button">Home</a></li>
+            <li><a href="about.html" class="nav-button">About</a></li>
+            <li><a href="wishlist.html" class="nav-button">Wishlist</a></li>
+            <li><a href="order.html" class="nav-button">Order</a></li>
+        </ul>
+        <ul class="auth-dekstop">
+            <li><a href="login.html" class="login">Login</a></li>
+            <li><a href="#" class="register">Register</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar Mobile -->
+    <nav id="navbarMobile" class="navbarMobile">
+        <div class="nav-content">
+            <div>
+                <a href="#" class="logo-mobile">LOKKA</a>
+            </div>
+            <div class="openButtonsidebar">
+                <a href="javascript:void(0);" class="sidebar-button" onclick="toggleNav()">
+                    <svg class="bar-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h14M1 6h14M1 11h7"/>
+                    </svg>
+                </a>
+            </div>
+            <aside id="sidebar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="order.html">Order</a>
+            </aside>
+        </div>
+    </nav>
+    <section class="section1">
+        <div class="container">
+            <div class="content">
+                <div>
+                    My Order
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>
