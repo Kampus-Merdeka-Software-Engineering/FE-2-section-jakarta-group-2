@@ -57,6 +57,74 @@
             </div>
         </div>
     </section>
+    <section class="paymentPage" id="paymentPageMobile">
+        <div class="paymentContainer" id="paymentContainerMobile">
+            <div class="title">
+              <a href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.75 22.5L11.25 15L18.75 7.5" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>  
+              </a>
+              <div>
+                <h2>Data Pemesan</h2>
+              </div>          
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="fullName">Nama Lengkap</label>
+                <input type="text" id="fullName" name="fullName" required>
+              </div>
+        
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+    
+              <div class="form-group">
+                <label for="Nomer Handphone">Nomer Handphone</label>
+                <input type="Nomer Handphone" id="Nomer Handphone" name="Nomer Handphone" required>
+              </div>
+    
+              <div class="titlePaymentMethod">
+                Metode Pembayaran
+              </div>
+        
+              <div class="form-group payment-method">
+                <div class="containerPaymentMethod">
+                  <div class="containerRadio">
+                    <input type="radio" id="briVirtualAccount" name="paymentMethod" value="briVirtualAccount" required>
+                  </div>
+                  <div class="containerLogo">
+                    <img src="img/logoPayment/briva.png" alt="BRI Logo"> 
+                  </div>
+                  <label for="BRI">BRI Virtual Account</label>
+                </div>
+                <div class="containerPaymentMethod">
+                  <div class="containerRadio">
+                    <input type="radio" id="bcaVirtualAccount" name="paymentMethod" value="bcaVirtualAccount" required>
+                  </div>
+                  <div class="containerLogo">
+                    <img src="img/logoPayment/bca.png"> 
+                  </div>
+                  <label for="BCA">BCA Virtual Account</label>
+                </div>
+                <div class="containerPaymentMethod">
+                  <div class="containerRadio">
+                    <input type="radio" id="mandiriVirtualAccount" name="paymentMethod" value="mandiriVirtualAccount" required>
+                  </div>
+                  <div class="containerLogo">
+                    <img src="img/logoPayment/mandiri.png" alt="Mandiri Logo">
+                  </div>
+                  <label for="MANDIRI">Mandiri Virtual Account</label>
+                </div>       
+              </div>
+    
+          <div class="form-group">
+            <button type="submit">Pesan</button>
+          </div>
+        </form>
+        </div>
+      </section>
     
     <script src="script/script.js"></script>
 </body>
